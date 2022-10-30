@@ -48,3 +48,9 @@ To connect a Web App to the Telegram client, place the script `telegram-web-app.
 Once the script is connected, a `window.Telegram.WebApp` object will become available.
 
 #### 3. Do the thing.
+
+
+## Debug the webapp
+For the Telegram Desktop version >= 3.7.4:
+
+Settings > Advanced > Experimental > Enable webview inspecting
