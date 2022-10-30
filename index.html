@@ -219,8 +219,6 @@
         </li>
     </ul>
 
-    <h3>greeting: </h3>
-    <pre id="greeting"></pre>
     <h3>Init Data: </h3>
     <pre id="initData"></pre>
     <h3>Init Data (unsafe): </h3>
@@ -241,7 +239,7 @@
     document.querySelector('#greeting').innerHTML = `Hi, ${initDataUnsafe.user.first_name}!`;
     document.querySelector('#initData').innerHTML = JSON.stringify(initData, null, 2);
     document.querySelector('#initDataUnsafe').innerHTML = JSON.stringify(initDataUnsafe, null, 2);
-    document.querySelector('#themeData').html(JSON.stringify(Telegram.WebApp.themeParams, null, 2));
+    document.querySelector('#themeData').innerHTML = JSON.stringify(Telegram.WebApp.themeParams, null, 2);
 
     Telegram.WebApp.MainButton
         .setText('CLOSE WEBVIEW')
